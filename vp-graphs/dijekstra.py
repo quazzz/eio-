@@ -37,3 +37,11 @@ graph_dijkstra = {
 distances, previous = dijkstra(graph_dijkstra, 'A')
 print("Shortest distances:", distances)
 print("Previous nodes:", previous)
+
+deltad = [(0, 1), (0, -1), (1,0), (-1,0)]
+
+for dx, dy in deltad:
+    if dx == 0:
+        print(dy)
+    if dy == 0:
+        print(dx)
